@@ -245,7 +245,7 @@
           margin-top: 30px;
           margin-bottom: 40px;
           font-size: 16px;
-        }
+        }    
 }
 @media screen and (max-width: 767px) {
   .main-button-space {
@@ -258,12 +258,42 @@
     &__text {
       font-size: 30px;
     }
-    .modal {
-      .modal-win {
-        width: 80%;
-        height: 80%;
-        margin-inline: 20px;
-      }
+  }
+  .modal {
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+    .modal-win {
+      width: 70%;
+      height: 70%;
+      margin-inline: 50px;
+    }
+    &__context {
+      padding-inline: 20px ;
+    }
+  }
+  .form { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    &__label-text {
+      width: 100%;
+      height: 100%;
+    }
+    &__checkbox {
+      align-content: center;
+    }
+    .form-btn {
+      margin: 0;
     }
   }
 }
