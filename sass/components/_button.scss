@@ -247,3 +247,23 @@
           font-size: 16px;
         }
 }
+@media screen and (max-width: 767px) {
+  .main-button-space {
+    width: 480px;
+    height: 400px;
+    background-color: #2f303a;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/header-mobile-img.jpg);
+    background-size: 480px 400px;
+    &__text {
+      font-size: 30px;
+    }
+    .modal {
+      .modal-win {
+        width: 80%;
+        height: 80%;
+        margin-inline: 20px;
+      }
+    }
+  }
+}
