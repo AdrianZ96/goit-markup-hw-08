@@ -43,3 +43,23 @@
     }
   }
 }
+@media screen and (max-width: 767px) {
+  .lower-main {
+    background-color: $darkbd-fontcolor;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    &__box{
+      display: inherit;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 0;
+      justify-content: center;
+      padding-bottom: 93px;
+     }
+     &__head-text{
+      padding-top: 93px;
+     }
+  }
+}

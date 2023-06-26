@@ -105,4 +105,21 @@
     border-radius: 2px;
   }
 }
+@media screen and ( max-width: 767px) {
+  .main-header{
+    display: flex;
+    &__menu{
+      display: inherit;
+    }
+    &__nav{
+      display: inherit;
+    }
+    &__submenu {
+      display: none;
+    }
+    &__list{
+      display: none;
+    }
+  }
 
+}

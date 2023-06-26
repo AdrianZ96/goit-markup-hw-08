@@ -35,3 +35,19 @@
     color: $shadowfontcolor;
   }
 }
+ @media screen and (max-width: 767px) {
+  .upper-main {
+    background-color: $darkbd-fontcolor;
+    &__about {
+      flex-wrap: wrap;
+      }
+      &__title {
+       max-width: 270px;
+       text-align: center;
+      }
+      &__text{
+        max-width: 270px;
+      }
+    }
+  
+ }

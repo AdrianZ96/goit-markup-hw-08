@@ -140,3 +140,48 @@
       }
       
 }
+@media screen and (max-width: 767px) {
+  .footer-bg{
+    background: #2f303a;
+    &__logo{
+      text-align: center;
+    }
+    &__addres {
+      text-align: center;
+    }
+    &__link {
+      text-align: center;
+    }
+    &__join{
+      text-align: center;
+    }
+    &__form{
+      display: inherit;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap: 10px;
+    }
+    &__newsletter{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      gap: 10px;
+
+    }
+    
+  }
+  
+  
+  .foot-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+}
