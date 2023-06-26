@@ -1,0 +1,45 @@
+.lower-main {
+  background-color: $darkbd-fontcolor;
+  padding-inline: 215px;
+
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__head-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $mainfontcolor;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #afb1b8;
+    fill: #afb1b8;
+    border-radius: 5%;
+    box-sizing: border-box;
+    padding: 16px 32px;
+    background-color: $darkbd-fontcolor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: $focus-active-hovercolor;
+      border-color: $focus-active-hovercolor;
+      cursor: pointer;
+    }
+  }
+}

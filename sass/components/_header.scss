@@ -1,0 +1,108 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    display: inherit;
+    gap: 23px;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  &__nav {
+    display: inherit;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__logo {
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: black;
+    margin: 0;
+    margin-right: 93px;
+    &__color {
+      color: $focus-active-hovercolor;
+    }
+  }
+  &__submenu {
+    font-weight: 500;
+    font-size: &mainfont-size;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:  $mainfontcolor;
+    text-decoration: none;
+    padding-right: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: $focus-active-hovercolor;
+    }
+    &:focus {
+      color: $focus-active-hovercolor;
+    }
+    &:active {
+      color: $focus-active-hovercolor;
+    }
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  &__icons {
+    margin-right: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: $focus-active-hovercolor;
+    }
+    &:focus {
+      color: $focus-active-hovercolor;
+    }
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: var(--mainfont-size);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $shadowfontcolor;
+    text-decoration: none;
+    fill:  $shadowfontcolor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+      color: $focus-active-hovercolor;
+      fill: $focus-active-hovercolor;
+    }
+    &:hover {
+      color: $focus-active-hovercolor;
+      fill: $focus-active-hovercolor;
+    }
+  }
+}
+.hd-section {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.current {
+  position: relative;
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: -33px;
+    left: 0;
+    width: 66%;
+    height: 4px;
+    background-color: $focus-active-hovercolor;
+    border-radius: 2px;
+  }
+}
+

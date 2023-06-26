@@ -1,0 +1,43 @@
+.main-middle {
+  padding-top: 93px;
+
+  &__head-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $mainfontcolor;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  &__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__label {
+    position: relative;
+    width: 370px;
+    height: 294px;
+
+    > .main-middle__label-text {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 26px 90px;
+      margin: 0;
+      font-weight: 700;
+      text-align: center;
+      font-size: $mainfont-size;
+      color: $darkbd-fontcolor;
+      background-color: rgba(47, 48, 58, 0.8);
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}
