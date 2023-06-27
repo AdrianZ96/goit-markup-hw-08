@@ -145,11 +145,13 @@
   padding: 32px;
   background-color: $darkbd-fontcolor;
   z-index: 999;
+  visibility: hidden;
 
   transform: translateX(100%);
   transition: $animation-main;
   &.is-open {
     transform: translateX(0);
+    visibility: visible;
   }
   .menu-toggle {
     position: absolute;
