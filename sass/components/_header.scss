@@ -9,6 +9,9 @@
     align-items: baseline;
     justify-content: space-between;
   }
+  .js-open-menu{
+    display: none;
+  }
   &__nav {
     display: inherit;
     justify-content: space-around;
@@ -25,7 +28,6 @@
     letter-spacing: 0.03em;
     color: black;
     margin: 0;
-    margin-right: 93px;
     &__color {
       color: $focus-active-hovercolor;
     }
@@ -97,7 +99,7 @@
   &::after {
     content: " ";
     position: absolute;
-    bottom: -33px;
+    bottom: -32px;
     left: 0;
     width: 66%;
     height: 4px;
@@ -111,8 +113,17 @@
     &__menu{
       display: inherit;
     }
+    .js-open-menu{
+      display: flex;
+      border: none;
+      background-color: inherit;
+      &:hover,
+      &:focus{
+        fill: $focus-active-hovercolor;
+      }
+    }
     &__nav{
-      display: inherit;
+      display: none;
     }
     &__submenu {
       display: none;
@@ -121,5 +132,81 @@
       display: none;
     }
   }
+
+}
+@media (max-width: 767px) {
+  
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: $darkbd-fontcolor;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: $animation-main;
+  &.is-open {
+    transform: translateX(0);
+  }
+  .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color:$darkbd-fontcolor;
+    border: none;
+    :hover{
+      fill: $focus-active-hovercolor;
+    }
+  }
+}
+.mobile{
+  display: flex;
+  flex-direction: column;
+&__menu{
+  font-size: 40px;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  line-height: 1.17;
+  color: black;
+  & > li{
+    padding-bottom: 10px;
+    &:hover,
+    &:focus{
+    color: $focus-active-hovercolor;
+  }
+  }
+  &__second{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__third{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+    bottom: 2px;
+    left: 10px;
+    & > li{
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      &:hover{
+        color: $focus-active-hovercolor;
+      }
+    }
+  }
+}
+&__phone{
+  font-size: 34px;
+}
+&__email{
+  font-weight: 500;
+  font-size: 24px;
+  color: $shadowfontcolor;
+}
+}
 
 }

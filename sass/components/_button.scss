@@ -1,8 +1,9 @@
 .main-button-space {
+  width: 1600px;
+  height: auto;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../images/main-bg-picture.jpg);
-  background-size: 1600px;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -248,20 +249,9 @@
         }    
 }
 @media screen and (max-width: 767px) {
-  .main-button-space {
-    width: 100vw;
-    height: 100vw;
-    background-color: #2f303a;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/header-mobile-img.jpg);
-    background-position: cover;
-    &__text {
-      font-size: 30px;
-    }
-  }
   .modal {
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.2);
     visibility: visible;
@@ -299,4 +289,17 @@
       margin: 0;
     }
   }
+}
+@media screen and (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.main-button-space {
+  max-width: 480px;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/header-mobile-img.jpg);
+  &__text{
+    font-size: 1.5em;
+  }
+}
 }

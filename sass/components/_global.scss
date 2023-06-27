@@ -13,6 +13,12 @@ body {
     margin: 0 auto;
     max-width: 1200px;
   }
+  @media screen and (max-width: 600px) {
+    .container.adaptive {
+      max-width: 600px;
+    }
+  }
+  
   .section {
     padding-block: 93px;
   }
@@ -42,4 +48,18 @@ body {
     border-bottom: 1px solid #ececec;
     width: 1600px;
     margin: 0;
+  }
+  @media screen and (max-width: 767px) {
+    img{
+      display: block;
+      max-width: 100%;
+      height: auto;  
+    }
+    li{
+      list-style: none;
+    }
+    a{
+      color: inherit;
+    }
+    
   }

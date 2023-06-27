@@ -20,17 +20,22 @@
   <body>
     <div class="container">
       <header class="main-header hd-section">
-        <nav class="main-header__menu">
-          <menu class="main-header__nav">
-            <li>
-              <a href="index.html" class="main-header__logo"
+        <a href="index.html" class="main-header__logo"
                 ><span class="main-header__logo__color">Web</span>Studio
               </a>
-            </li>
+        <nav class="main-header__menu">
+          <button class="js-open-menu">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <menu class="main-header__nav">
+            
             <li><a href="index.html" class="main-header__submenu current"> Agencja</a></li>
             <li><a href="portfolio.html" class="main-header__submenu">Portfolio</a></li>
             <li><a href="#contact" class="main-header__submenu">Kontakt</a></li>
           </menu>
+        
         </nav>
         <ul class="main-header__list">
           <li>
@@ -53,6 +58,7 @@
             >
           </li>
         </ul>
+        
       </header>
     </div>
     <main>
@@ -478,6 +484,44 @@
         </div>
       </div>
     </main>
+    
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          width="24"
+          height="24">
+          <use href="./images/modal-icons.svg#icon-close1"></use>
+        </svg>
+      </button>
+      <div class="mobile">
+      <ul class="mobile__menu">
+            <li><a href="index.html" class=""> Agencja</a></li>
+            <li><a href="portfolio.html" class="">Portfolio</a></li>
+            <li><a href="#contact" class="">Kontakt</a></li>
+      </ul>
+      <ul class="mobile__menu__second">
+        <li class="mobile__phone">
+          <a href="tel:48111111111" class="">
+            +48 111 111 111</a
+          >
+        </li>
+        <li>
+          <a
+            href="mailto:info@devstudio.com"
+            target="_blank"
+            class="mobile__email">
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile__menu__third">
+        <li class="mobile__socials">Instagram</li>
+        <li class="mobile__socials">Twitter</li>
+        <li class="mobile__socials">Facebook</li>
+        <li class="mobile__socials">LinkedIn</li>
+      </ul>
+    </div>
+    </div>
     <footer class="footer-bg section-ft">
       <div class="container foot-panel">
         <div>
