@@ -1,0 +1,84 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 48px 40px;
+  background-color: $darkbd-fontcolor;
+  z-index: 999;
+  display: flex ;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transform: translateX(100%);
+  transition: $animation-main;
+  &.is-open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  &__button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color:$darkbd-fontcolor;
+    border: none;
+    :hover{
+      fill: $focus-active-hovercolor;
+    }
+  }
+}
+.mobile-menu{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  &__link{
+    font-size: 40px;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    line-height: 1.17;
+    color: $mainfontcolor;
+    &:hover,
+    &:focus{
+    color: $focus-active-hovercolor;
+  }
+  }
+  &__second{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__third{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+  }
+  &__socials{
+    padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      &:hover{
+        color: $focus-active-hovercolor;
+      }
+  }
+  &__phone{
+    font-size: 34px;
+    color: $mainfontcolor;
+    letter-spacing: 0.68px;
+    &:hover{
+      color: $focus-active-hovercolor;
+    }
+  }
+  &__email{
+    font-weight: 500;
+    font-size: 24px;
+    color: $shadowfontcolor;
+    letter-spacing: 0.48px;
+    &:hover{
+      color: $focus-active-hovercolor;
+    }
+  }
+}

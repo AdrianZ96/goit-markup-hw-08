@@ -11,14 +11,16 @@ body {
   }
   .container {
     margin: 0 auto;
-    max-width: 1200px;
-  }
-  @media screen and (max-width: 600px) {
-    .container.adaptive {
-      max-width: 600px;
+    max-width: 480px;
+    padding: 0 15px;
+    
+    @include tablet{
+      max-width: 768px;
+    }
+    @include desktop{
+      max-width: 1200px;
     }
   }
-  
   .section {
     padding-block: 93px;
   }
@@ -44,22 +46,22 @@ body {
   p{
     margin: 0;
   }
+  li{
+    list-style: none;
+  }
   .nav-border {
     border-bottom: 1px solid #ececec;
     width: 1600px;
     margin: 0;
   }
-  @media screen and (max-width: 767px) {
+  /*@media screen and (max-width: 767px) {
     img{
       display: block;
       max-width: 100%;
       height: auto;  
     }
-    li{
-      list-style: none;
-    }
     a{
       color: inherit;
     }
     
-  }
+  }*/

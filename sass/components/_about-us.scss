@@ -1,4 +1,5 @@
 .main-middle {
+  display: none;
   padding-top: 93px;
 
   &__head-text {
@@ -41,9 +42,9 @@
     }
   }
 }
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
   .main-middle{
     display: none;
   }
   
-}
+}*/

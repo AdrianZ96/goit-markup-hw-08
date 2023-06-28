@@ -1,4 +1,5 @@
 .upper-main {
+  display: none;
   background-color: $darkbd-fontcolor;
 
   &__about {
@@ -35,7 +36,7 @@
     color: $shadowfontcolor;
   }
 }
- @media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .upper-main {
     background-color: $darkbd-fontcolor;
     &__about {
@@ -50,4 +51,4 @@
       }
     }
   
- }
+ }*/
