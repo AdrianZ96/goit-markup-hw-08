@@ -1,15 +1,29 @@
 .lower-main {
-  display: none;
   background-color: $darkbd-fontcolor;
-  padding-inline: 215px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  @include desktop{
+    padding-inline: 215px;
+  }
 
   &__box {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
     list-style: none;
+    justify-content: center;
     padding: 0;
+    @include tablet{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    @include desktop{
+      flex-wrap: nowrap;
+    }
   }
 
   &__head-text {
@@ -19,7 +33,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $mainfontcolor;
-    margin-top: 0;
+    margin-top: 60px;
     margin-bottom: 50px;
   }
 

@@ -6,32 +6,34 @@
     flex-wrap: wrap; 
     align-items: center;
     gap: 30px;
+    list-style: none;
+    justify-content: center;
+    
     @include tablet {
     display: flex;
-    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 0;
   }
   @include desktop{
-  list-style: none;
-  justify-content: center;
-  padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
   }
 }
 
   &__lorem-img {
    
     background-color: #f5f4fa;
-    width: 100%;
+    width: 270px;
     height: 120px;
     padding-block: 25px;
     padding-inline: 100px;
     margin-bottom: 30px;
-    
-  
-    @include desktop{
-      width: 270px;
-    }
 
   }
 
@@ -43,6 +45,15 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin: 0;
+    max-width: 270px;
+    @include tablet{
+      max-width: 356px;
+      text-align: start;
+    }
+    @include desktop{
+      max-width: 270px;
+      text-align: start;
+    }
   }
 
   &__text {
@@ -51,21 +62,14 @@
     letter-spacing: 0.03em;
     color: $shadowfontcolor;
     margin-top: 10px;
+    max-width: 270px;
+    @include tablet{
+      max-width: 270px;
+      text-align: start;
+    }
+    @include desktop{
+      max-width: 270px;
+      text-align: start;
+    }
   }
 }
-/* @media screen and (max-width: 767px) {
-  .upper-main {
-    background-color: $darkbd-fontcolor;
-    &__about {
-      flex-wrap: wrap;
-      }
-      &__title {
-       max-width: 270px;
-       text-align: center;
-      }
-      &__text{
-        max-width: 270px;
-      }
-    }
-  
- }*/

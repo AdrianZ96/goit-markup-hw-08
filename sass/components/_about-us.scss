@@ -1,6 +1,9 @@
 .main-middle {
   display: none;
   padding-top: 93px;
+  @include desktop{
+    display: inherit;
+  }
 
   &__head-text {
     font-weight: 700;

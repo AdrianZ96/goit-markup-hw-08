@@ -57,6 +57,14 @@ body {
     width: 1600px;
     margin: 0;
   }
+  svg{
+    vertical-align: middle;
+  }
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;  
+  }
   /*@media screen and (max-width: 767px) {
     img{
       display: block;
