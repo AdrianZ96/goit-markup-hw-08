@@ -22,7 +22,10 @@ body {
     }
   }
   .section {
-    padding-block: 93px;
+    padding-block: 60px;
+    @include desktop{
+      padding-block: 93px;
+    }
   }
   .wrapper {
     background: #e5e5e5;
