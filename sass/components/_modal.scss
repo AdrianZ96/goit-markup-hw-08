@@ -11,14 +11,23 @@
   z-index: 2;
     }
     .modal-win {
-        max-width: 528px;
-        max-height: 581px;
+        max-width: 450px;
+        max-height: 609px;
         position: fixed;
         background-color: $darkbd-fontcolor;
         visibility: visible;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: flex-start;
         border-radius: 4px;
         transition: $animation-main;
+        z-index: 999;
+        
+        @include desktop{
+          max-width: 528px;
+          max-height: 581px;
+        }
         &__context {
             display: flex;
             flex-direction: column;
