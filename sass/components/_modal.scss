@@ -26,11 +26,13 @@
         transition: $animation-main;
         margin-inline: 15px;
         z-index: 999;
+        @include tablet{
+          max-width: 450px;
+        }
         
         @include desktop{
           max-width: 528px;
           max-height: 581px;
-          top: 221px;
           margin: 0;
 
         }
