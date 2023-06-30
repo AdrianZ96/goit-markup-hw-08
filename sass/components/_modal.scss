@@ -1,7 +1,9 @@
 .modal {
-  width: 100vw;
-  height: 100vw;
   position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
   visibility: visible;
   display: flex;
@@ -22,11 +24,15 @@
         align-content: flex-start;
         border-radius: 4px;
         transition: $animation-main;
+        margin-inline: 15px;
         z-index: 999;
         
         @include desktop{
           max-width: 528px;
           max-height: 581px;
+          top: 221px;
+          margin: 0;
+
         }
         &__context {
             display: flex;
@@ -50,13 +56,21 @@
           }
           &__text {
             margin-top: 40px;
-            margin-bottom: 30px;
+            margin-bottom: 12px;
             font-weight: 700;
             font-size: 20px;
             text-align: center;
             letter-spacing: 0.03em;
             color: $mainfontcolor;
             line-height: 1.15;
+            padding-inline: 40px;
+            @include tablet{
+              margin-bottom: 12px;
+            }
+            @include desktop{
+              margin-bottom: 30px;
+              padding: 0;
+            }
           }
   
   
@@ -69,6 +83,10 @@
         display: flex;
         flex-direction: column;
         gap: $form-gap;
+        padding-inline: 40px;
+        @include desktop{
+          padding: 0;
+        }
       
         > label {
           display: flex;
@@ -80,6 +98,8 @@
           padding-left: 42px;
           border: 1px solid rgba(33, 33, 33, 0.2);
           outline: none;
+        
+
       
           &:active,
           &:focus {
@@ -91,6 +111,11 @@
       
         &__space {
           position: relative;
+          width: 370px;
+          @include desktop{
+            width: 100%;
+          }
+
           &__icons {
             position: absolute;
             margin: 11px 12px;
@@ -135,7 +160,6 @@
           letter-spacing: 0.01em;
           border: 1px solid rgba(33, 33, 33, 0.2);
           padding: 12px 16px;
-      
           &:focus,
           &:active,
           &:hover {
@@ -186,11 +210,21 @@
             border-radius: 2px;
         }
         &-text {
-            font-size: $mainfont-size;
+            font-size: 12px;
             line-height: 1.71;
             letter-spacing: 0.03em;
             color: $shadowfontcolor;
+            margin-left: 5px;
             margin: 0;
+            @include tablet{
+              font-size: 12px;
+              letter-spacing: 0.36px;
+              margin-left: 5px;
+            }
+            @include desktop{
+              font-size: $mainfont-size;  
+            }
+
           }
           &-text > a {
             color: $focus-active-hovercolor;
@@ -205,7 +239,7 @@
             padding: 10px 76px;
             background-color: $focus-active-hovercolor;
             color: $darkbd-fontcolor;
-            margin-inline: 124px;
+            margin-inline: 85px;
             text-align: center;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
@@ -213,5 +247,11 @@
             margin-top: 30px;
             margin-bottom: 40px;
             font-size: 16px;
+            @include tablet{
+              margin-inline: 85px;
+            }
+            @include desktop{
+              margin-inline: 124px;
+            }
           }    
   }
