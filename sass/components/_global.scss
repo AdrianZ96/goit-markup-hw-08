@@ -20,6 +20,9 @@ body {
     @include desktop{
       max-width: 1200px;
     }
+    &__customers{
+      padding:0 10px;
+    }
   }
   .section {
     padding-block: 60px;
