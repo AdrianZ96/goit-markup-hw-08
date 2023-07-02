@@ -259,21 +259,23 @@
           <p class="main__head-text">Nasz zespół</p>
           <div class="main__workers container">
             <figure class="main__team-card">
-              <img
-                src="images/person1.jpg"
-                alt="Product Desinger"
-                srcset="
-                ./images/media-phone/jhon1x1.jpg 450w,
-                ./images/media-phone/jhon1x2.jpg 900w,
-                ./images/tablet/jhontablet1x1.jpg 354w,
-                ./images/tablet/jhontablet1x2.jpg 708w,
-                ./images/desktop/jhondesctop1x1.jpg 270w,
-                ./images/desktop/jhondesctop1x2.jpg 540w,
-                "
-                sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
-                
+              <picture class="">
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/desktop/jhondesctop1x1.jpg 1x, ./images/desktop/jhondesctop1x2.jpg 2x"
                 />
-
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/tablet/jhontabletx1.jpg 1x, ./images/tablet/jhontabletx2.jpg 2x"
+                />
+                <source
+                media="(max-width: 767px)"
+                srcset="./images/media-phone/jhon1x1.jpg 1x, ./images/media-phone/jhon1x2.jpg 2x"
+                />
+                <img
+                src="./images/person1.jpg"
+                alt="Product Designer"
+                type="jpg"/>
               <figcaption>
                 <p class="main__names">John Doe</p>
                 <p class="main__jobs">Product Desinger</p>
@@ -322,21 +324,24 @@
               </figcaption>
             </figure>
             <figure class="main__team-card">
-              <img
-                src="images/person2.jpg"
-                alt="Frontend Developer"
-                srcset="
-                ./images/media-phone/jhon2x1.jpg 450w,
-                ./images/media-phone/jhon2x2.jpg 900w,
-                ./images/tablet/jhontablet2x1.jpg 354w,
-                ./images/tablet/jhontablet2x2.jpg 708w,
-                ./images/desktop/jhondesctop2x1.jpg 270w,
-                ./images/desktop/jhondesctop2x2.jpg 540w,
-                "
-                sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
-              
+              <picture class="">
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/desktop/jhondesctop2x1.jpg 1x, ./images/desktop/jhondesctop2x2.jpg 2x"
                 />
-
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/tablet/jhontablet1x1.jpg 1x, ./images/tablet/jhontablet1x2.jpg 2x"
+                />
+                <source
+                media="(max-width: 767px)"
+                srcset="./images/media-phone/jhon2x1.jpg 1x, ./images/media-phone/jhon2x2.jpg 2x"
+                />
+                <img
+                src="./images/person2.jpg"
+                alt="Frontend Developer"
+                type="jpg"/>
+              </picture>
               <figcaption>
                 <p class="main__names">John Doe</p>
                 <p class="main__jobs">Frontend Developer</p>
@@ -385,21 +390,24 @@
               </figcaption>
             </figure>
             <figure class="main__team-card">
-              <img
-                src="images/person3.jpg"
-                alt="Marketing"
-                srcset="
-                ./images/media-phone/jhon3x1.jpg 450w,
-                ./images/media-phone/jhon3x2.jpg 900w,
-                ./images/tablet/jhontablet3x1.jpg 354w,
-                ./images/tablet/jhontablet3x2.jpg 708w,
-                ./images/desktop/jhondesctop3x1.jpg 270w,
-                ./images/desktop/jhondesctop3x2.jpg 540w,
-                "
-                sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
-              
+              <picture class="">
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/desktop/jhondesctop3x1.jpg 1x,./images/desktop/jhondesctop3x2.jpg 2x"
                 />
-
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/tablet/jhontablet2x1.jpg 1x, ./images/tablet/jhontablet2x2.jpg 2x"
+                />
+                <source
+                media="(max-width: 767px)"
+                srcset="./images/media-phone/jhon3x1.jpg 1x, ./images/media-phone/jhon3x2.jpg 2x"
+                />
+                <img
+                src="./images/person3.jpg"
+                alt="Marketing"
+                type="jpg"/>
+              </picture>
               <figcaption>
                 <p class="main__names">John Doe</p>
                 <p class="main__jobs">Marketing</p>
@@ -448,19 +456,24 @@
               </figcaption>
             </figure>
             <figure class="main__team-card">
-              <img
-                src="images/person4.jpg"
-                alt="UI Desinger"
-                srcset="
-                ./images/media-phone/jhon4x1.jpg 450w,
-                ./images/media-phone/jhon4x2.jpg 900w,
-                ./images/tablet/jhontablet4x1.jpg 354w,
-                ./images/tablet/jhontablet4x2.jpg 708w,
-                ./images/desktop/jhondesctop4x1.jpg 270w,
-                ./images/desktop/jhondesctop4x2.jpg 540w,
-                "
-                sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
+              <picture class="">
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/desktop/jhondesctop4x1.jpg 1x,./images/desktop/jhondesctop4x2.jpg 2x"
                 />
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/tablet/jhontablet3x1.jpg 1x,./images/tablet/jhontablet3x2.jpg 2x"
+                />
+                <source
+                media="(max-width: 767px)"
+                srcset="./images/media-phone/jhon4x1.jpg 1x,./images/media-phone/jhon4x2.jpg 2x"
+                />
+                <img
+                src="./images/person4.jpg"
+                alt="UI Desinger"
+                type="jpg"/>
+              </picture>
               <figcaption>
                 <p class="main__names">John Doe</p>
                 <p class="main__jobs">UI Desinger</p>
